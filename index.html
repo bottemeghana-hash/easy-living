@@ -1,0 +1,2281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Easy Living Place | Hyderabad Rentals</title>
+
+<meta name="description"
+content="Easy Living Place - Find comfortable rental homes, apartments and co-living spaces in Hyderabad.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+rel="stylesheet">
+
+<style>
+
+:root{
+    --teal:#0eaaa9;
+    --teal-dark:#087f80;
+    --dark:#102a2d;
+    --text:#203638;
+    --muted:#687b7d;
+    --light:#f4faf9;
+    --white:#ffffff;
+    --border:#e1eceb;
+    --shadow:0 15px 45px rgba(16,42,45,.12);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"DM Sans",sans-serif;
+    color:var(--text);
+    background:white;
+    line-height:1.6;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+button,
+input,
+select,
+textarea{
+    font-family:inherit;
+}
+
+.container{
+    width:min(1150px,92%);
+    margin:auto;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(255,255,255,.96);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid var(--border);
+}
+
+.navbar{
+    min-height:82px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:25px;
+}
+
+.logo-area{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo{
+    width:58px;
+    height:58px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.logo-text{
+    font-weight:700;
+    font-size:19px;
+    color:var(--dark);
+}
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:25px;
+    font-size:14px;
+    font-weight:600;
+}
+
+.nav-links a:hover{
+    color:var(--teal);
+}
+
+.nav-whatsapp{
+    background:#25D366;
+    color:white !important;
+    padding:11px 17px;
+    border-radius:30px;
+}
+
+.menu-button{
+    display:none;
+    border:0;
+    background:none;
+    font-size:28px;
+    cursor:pointer;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+    min-height:650px;
+    display:flex;
+    align-items:center;
+    position:relative;
+    overflow:hidden;
+
+    background:
+    linear-gradient(
+        110deg,
+        rgba(5,39,42,.94),
+        rgba(5,39,42,.68)
+    ),
+    url("easy living.jpeg");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-content{
+    color:white;
+    padding:100px 0;
+}
+
+.small-title{
+    color:#7ee2df;
+    font-size:12px;
+    letter-spacing:2px;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+.hero h1{
+    font-family:"Playfair Display",serif;
+    font-size:clamp(45px,7vw,76px);
+    line-height:1.05;
+    max-width:800px;
+}
+
+.hero h1 span{
+    color:#62d9d5;
+}
+
+.hero-description{
+    max-width:680px;
+    font-size:18px;
+    color:#e5eeee;
+    margin:25px 0 32px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:13px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    border:none;
+    cursor:pointer;
+    padding:14px 23px;
+    border-radius:30px;
+    font-weight:700;
+    transition:.2s;
+}
+
+.btn-primary{
+    background:var(--teal);
+    color:white;
+}
+
+.btn-primary:hover{
+    background:var(--teal-dark);
+    transform:translateY(-2px);
+}
+
+.btn-white{
+    background:white;
+    color:var(--dark);
+}
+
+.btn-white:hover{
+    transform:translateY(-2px);
+}
+
+.hero-info{
+    display:flex;
+    gap:40px;
+    flex-wrap:wrap;
+    margin-top:55px;
+}
+
+.hero-info div{
+    display:flex;
+    flex-direction:column;
+}
+
+.hero-info strong{
+    font-size:17px;
+}
+
+.hero-info span{
+    color:#b9cccc;
+    font-size:12px;
+}
+
+/* =========================
+   SEARCH
+========================= */
+
+.search-section{
+    margin-top:-55px;
+    position:relative;
+    z-index:5;
+}
+
+.search-box{
+    background:white;
+    border-radius:20px;
+    box-shadow:var(--shadow);
+    padding:25px;
+    display:grid;
+    grid-template-columns:1.3fr 1fr 1fr auto;
+    gap:15px;
+    align-items:center;
+}
+
+.search-title small{
+    color:var(--muted);
+}
+
+.search-title h2{
+    font-family:"Playfair Display",serif;
+    font-size:24px;
+}
+
+select,
+input,
+textarea{
+    width:100%;
+    border:1px solid var(--border);
+    border-radius:10px;
+    padding:13px 14px;
+    background:white;
+    color:var(--text);
+    outline:none;
+}
+
+select:focus,
+input:focus,
+textarea:focus{
+    border-color:var(--teal);
+}
+
+/* =========================
+   GENERAL SECTIONS
+========================= */
+
+.section{
+    padding:95px 0;
+}
+
+.section-light{
+    background:var(--light);
+}
+
+.section-heading{
+    display:flex;
+    justify-content:space-between;
+    align-items:end;
+    gap:35px;
+    margin-bottom:38px;
+}
+
+.section-label{
+    color:var(--teal);
+    font-size:12px;
+    letter-spacing:2px;
+    font-weight:700;
+    margin-bottom:12px;
+}
+
+.section-heading h2,
+.center-heading h2{
+    font-family:"Playfair Display",serif;
+    font-size:44px;
+    line-height:1.1;
+}
+
+.section-heading p{
+    color:var(--muted);
+    max-width:470px;
+}
+
+/* =========================
+   LOCALITIES
+========================= */
+
+.locality-grid{
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    gap:13px;
+}
+
+.locality{
+    padding:18px 12px;
+    text-align:center;
+    background:white;
+    border:1px solid var(--border);
+    border-radius:12px;
+    font-weight:600;
+    transition:.2s;
+}
+
+.locality:hover{
+    background:var(--teal);
+    color:white;
+    transform:translateY(-3px);
+}
+
+/* =========================
+   PROPERTIES
+========================= */
+
+.property-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:24px;
+}
+
+.property-card{
+    background:white;
+    border:1px solid var(--border);
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 8px 28px rgba(16,42,45,.06);
+    transition:.25s;
+}
+
+.property-card:hover{
+    transform:translateY(-5px);
+    box-shadow:var(--shadow);
+}
+
+.property-image{
+    height:230px;
+    position:relative;
+    background-size:cover;
+    background-position:center;
+}
+
+.property-one{
+    background-image:
+    linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1)),
+    url("https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=80");
+}
+
+.property-two{
+    background-image:
+    linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1)),
+    url("https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1000&q=80");
+}
+
+.property-three{
+    background-image:
+    linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1)),
+    url("https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1000&q=80");
+}
+
+.property-badge{
+    position:absolute;
+    top:15px;
+    left:15px;
+    background:white;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:11px;
+    font-weight:700;
+}
+
+.property-content{
+    padding:22px;
+}
+
+.property-type{
+    color:var(--teal-dark);
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:1px;
+    text-transform:uppercase;
+}
+
+.property-content h3{
+    font-size:20px;
+    margin:7px 0;
+}
+
+.property-location{
+    color:var(--muted);
+    font-size:14px;
+}
+
+.price{
+    font-size:20px;
+    font-weight:700;
+    color:var(--dark);
+    margin:13px 0;
+}
+
+.property-features{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-bottom:18px;
+}
+
+.property-features span{
+    background:var(--light);
+    padding:5px 9px;
+    border-radius:7px;
+    font-size:11px;
+}
+
+.property-contact{
+    color:var(--teal-dark);
+    font-weight:700;
+}
+
+/* =========================
+   PROPERTY VIDEO
+========================= */
+
+.video-section{
+    background:var(--dark);
+    color:white;
+}
+
+.video-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.video-text h2{
+    font-family:"Playfair Display",serif;
+    font-size:46px;
+    line-height:1.1;
+    margin-bottom:20px;
+}
+
+.video-text p{
+    color:#bfd0d0;
+    margin-bottom:25px;
+    max-width:520px;
+}
+
+.video-container{
+    display:flex;
+    justify-content:center;
+}
+
+.video-container video{
+    width:100%;
+    max-width:430px;
+    max-height:650px;
+    border-radius:20px;
+    background:black;
+    box-shadow:0 20px 50px rgba(0,0,0,.35);
+}
+
+/* =========================
+   AMENITIES
+========================= */
+
+.center-heading{
+    text-align:center;
+    max-width:680px;
+    margin:0 auto 45px;
+}
+
+.center-heading p{
+    color:var(--muted);
+    margin-top:12px;
+}
+
+.amenity-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+}
+
+.amenity{
+    background:white;
+    border:1px solid var(--border);
+    padding:28px;
+    border-radius:16px;
+}
+
+.amenity-icon{
+    font-size:31px;
+    margin-bottom:15px;
+}
+
+.amenity h3{
+    margin-bottom:7px;
+}
+
+.amenity p{
+    color:var(--muted);
+    font-size:13px;
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:70px;
+    align-items:center;
+}
+
+.about-image{
+    min-height:430px;
+    border-radius:25px;
+    display:grid;
+    place-items:center;
+
+    background:
+    linear-gradient(
+        rgba(14,170,169,.55),
+        rgba(8,127,128,.75)
+    ),
+    url("easy living.jpeg");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.about-logo{
+    width:220px;
+    height:220px;
+    object-fit:cover;
+    border-radius:20px;
+    box-shadow:var(--shadow);
+}
+
+.about-text h2{
+    font-family:"Playfair Display",serif;
+    font-size:45px;
+    line-height:1.1;
+    margin-bottom:20px;
+}
+
+.about-text p{
+    color:var(--muted);
+    margin-bottom:15px;
+}
+
+.check-list{
+    margin-top:25px;
+    display:grid;
+    gap:10px;
+    font-weight:600;
+}
+
+/* =========================
+   RENTAL FORM
+========================= */
+
+.form-section{
+    background:var(--light);
+}
+
+.form-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:65px;
+    align-items:start;
+}
+
+.form-info h2{
+    font-family:"Playfair Display",serif;
+    font-size:45px;
+    line-height:1.1;
+    margin-bottom:20px;
+}
+
+.form-info > p{
+    color:var(--muted);
+    margin-bottom:30px;
+}
+
+.contact-details{
+    display:grid;
+    gap:20px;
+}
+
+.contact-details strong{
+    display:block;
+}
+
+.contact-details p{
+    color:var(--muted);
+    margin-top:3px;
+}
+
+.rental-form{
+    background:white;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:var(--shadow);
+}
+
+.rental-form h3{
+    font-family:"Playfair Display",serif;
+    font-size:27px;
+    margin-bottom:5px;
+}
+
+.form-intro{
+    color:var(--muted);
+    font-size:13px;
+    margin-bottom:20px;
+}
+
+.form-row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:13px;
+}
+
+.form-group{
+    margin-bottom:14px;
+}
+
+.form-group label{
+    display:block;
+    font-size:12px;
+    font-weight:700;
+    margin-bottom:6px;
+}
+
+.full{
+    width:100%;
+}
+
+.form-note{
+    display:block;
+    color:var(--muted);
+    font-size:10px;
+    margin-top:10px;
+}
+
+/* =========================
+   INSTAGRAM
+========================= */
+
+.instagram-section{
+    background:white;
+}
+
+.instagram-box{
+    background:
+    linear-gradient(
+        120deg,
+        #102a2d,
+        #0eaaa9
+    );
+    color:white;
+    border-radius:25px;
+    padding:55px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:30px;
+}
+
+.instagram-box h2{
+    font-family:"Playfair Display",serif;
+    font-size:40px;
+}
+
+.instagram-box p{
+    color:#d3eeee;
+    max-width:600px;
+    margin-top:8px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#0b2022;
+    color:white;
+    padding:40px 0;
+}
+
+.footer-grid{
+    display:flex;
+    justify-content:space-between;
+    gap:30px;
+}
+
+.footer-brand{
+    font-size:20px;
+    font-weight:700;
+}
+
+.footer-text{
+    color:#a9bebe;
+    font-size:13px;
+    margin-top:5px;
+}
+
+.footer-right{
+    color:#a9bebe;
+    font-size:13px;
+}
+
+/* =========================
+   FLOATING WHATSAPP
+========================= */
+
+.whatsapp-float{
+    position:fixed;
+    right:22px;
+    bottom:22px;
+    z-index:2000;
+
+    display:flex;
+    align-items:center;
+    gap:9px;
+
+    background:#25D366;
+    color:white;
+
+    padding:14px 19px;
+    border-radius:40px;
+
+    font-weight:700;
+    font-size:14px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+
+    transition:.2s;
+}
+
+.whatsapp-float:hover{
+    transform:translateY(-3px);
+    color:white;
+}
+
+.whatsapp-icon{
+    width:27px;
+    height:27px;
+    border:2px solid white;
+    border-radius:50%;
+
+    display:grid;
+    place-items:center;
+
+    font-size:16px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:900px){
+
+    .nav-links{
+        display:none;
+        position:absolute;
+        top:82px;
+        left:0;
+        right:0;
+        background:white;
+        padding:25px;
+        flex-direction:column;
+        border-bottom:1px solid var(--border);
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    .menu-button{
+        display:block;
+    }
+
+    .search-box{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .search-title{
+        grid-column:1/-1;
+    }
+
+    .property-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .amenity-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .locality-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+    .video-grid,
+    .about-grid,
+    .form-grid{
+        grid-template-columns:1fr;
+        gap:40px;
+    }
+
+    .instagram-box{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+}
+
+@media(max-width:600px){
+
+    .navbar{
+        min-height:70px;
+    }
+
+    .logo{
+        width:48px;
+        height:48px;
+    }
+
+    .logo-text{
+        font-size:16px;
+    }
+
+    .hero{
+        min-height:600px;
+    }
+
+    .hero-content{
+        padding:80px 0;
+    }
+
+    .hero h1{
+        font-size:45px;
+    }
+
+    .hero-description{
+        font-size:16px;
+    }
+
+    .hero-info{
+        gap:20px;
+    }
+
+    .search-box{
+        grid-template-columns:1fr;
+    }
+
+    .section{
+        padding:70px 0;
+    }
+
+    .section-heading{
+        display:block;
+    }
+
+    .section-heading p{
+        margin-top:15px;
+    }
+
+    .section-heading h2,
+    .center-heading h2{
+        font-size:35px;
+    }
+
+    .property-grid,
+    .amenity-grid{
+        grid-template-columns:1fr;
+    }
+
+    .locality-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .form-row{
+        grid-template-columns:1fr;
+    }
+
+    .about-text h2,
+    .form-info h2{
+        font-size:36px;
+    }
+
+    .instagram-box{
+        padding:35px 25px;
+    }
+
+    .instagram-box h2{
+        font-size:32px;
+    }
+
+    .footer-grid{
+        display:block;
+    }
+
+    .footer-right{
+        margin-top:15px;
+    }
+
+    .whatsapp-float{
+        right:12px;
+        bottom:12px;
+        padding:13px 16px;
+    }
+}
+
+</style>
+</head>
+
+
+<body>
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+<div class="container navbar">
+
+<a href="#home" class="logo-area">
+
+<img
+src="easy living.jpeg"
+alt="Easy Living Place Logo"
+class="logo"
+>
+
+<span class="logo-text">
+Easy Living Place
+</span>
+
+</a>
+
+
+<button
+class="menu-button"
+onclick="toggleMenu()"
+>
+☰
+</button>
+
+
+<nav class="nav-links" id="navLinks">
+
+<a href="#home">Home</a>
+
+<a href="#properties">Properties</a>
+
+<a href="#video">Property Video</a>
+
+<a href="#amenities">Amenities</a>
+
+<a href="#about">About</a>
+
+<a href="#rental">Rental Requirement</a>
+
+<a
+href="https://wa.me/917386190087?text=Hello%20Easy%20Living%20Place"
+target="_blank"
+class="nav-whatsapp"
+>
+WhatsApp
+</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero" id="home">
+
+<div class="container hero-content">
+
+<div class="small-title">
+HYDERABAD RENTALS & CO-LIVING
+</div>
+
+<h1>
+Find a place that feels like
+<span>home.</span>
+</h1>
+
+<p class="hero-description">
+Find comfortable rental homes, furnished rooms and co-living spaces
+with convenient access to HITECH City, Gachibowli, offices and metro routes.
+</p>
+
+
+<div class="hero-buttons">
+
+<a
+href="#properties"
+class="btn btn-primary"
+>
+Explore Properties
+</a>
+
+<a
+href="#rental"
+class="btn btn-white"
+>
+Find Your Home
+</a>
+
+</div>
+
+
+<div class="hero-info">
+
+<div>
+<strong>5.0 ★</strong>
+<span>Google rating</span>
+</div>
+
+<div>
+<strong>10 AM – 6 PM</strong>
+<span>Business hours</span>
+</div>
+
+<div>
+<strong>Hafeezpet</strong>
+<span>Hyderabad</span>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     SEARCH
+========================= -->
+
+<section class="search-section">
+
+<div class="container">
+
+<div class="search-box">
+
+<div class="search-title">
+
+<small>
+Looking for a home?
+</small>
+
+<h2>
+Find your place
+</h2>
+
+</div>
+
+
+<input
+type="text"
+id="searchLocation"
+placeholder="Preferred location"
+/>
+
+
+<select id="searchBhk">
+
+<option value="">
+Required BHK
+</option>
+
+<option>
+2 BHK
+</option>
+
+<option>
+3 BHK
+</option>
+
+</select>
+
+
+<button
+class="btn btn-primary"
+onclick="searchProperty()"
+>
+Search
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     LOCALITIES
+========================= -->
+
+<section class="section section-light">
+
+<div class="container">
+
+<div class="center-heading">
+
+<div class="section-label">
+POPULAR AREAS
+</div>
+
+<h2>
+Explore Hyderabad
+</h2>
+
+<p>
+Find rental homes near major offices, metro routes and popular neighbourhoods.
+</p>
+
+</div>
+
+
+<div class="locality-grid">
+
+<div class="locality">
+Hafeezpet
+</div>
+
+<div class="locality">
+Kondapur
+</div>
+
+<div class="locality">
+Gachibowli
+</div>
+
+<div class="locality">
+Madhapur
+</div>
+
+<div class="locality">
+Hitech City
+</div>
+
+<div class="locality">
+Kukatpally
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     PROPERTIES
+========================= -->
+
+<section class="section" id="properties">
+
+<div class="container">
+
+<div class="section-heading">
+
+<div>
+
+<div class="section-label">
+FEATURED OPTIONS
+</div>
+
+<h2>
+Popular Living Spaces
+</h2>
+
+</div>
+
+<p>
+Explore comfortable rental and co-living options suitable for
+students, professionals and families.
+</p>
+
+</div>
+
+
+<div class="property-grid">
+
+
+<!-- PROPERTY 1 -->
+
+<article class="property-card">
+
+<div class="property-image property-one">
+
+<span class="property-badge">
+Featured
+</span>
+
+</div>
+
+
+<div class="property-content">
+
+<div class="property-type">
+Co-Living
+</div>
+
+<h3>
+Furnished Living Space
+</h3>
+
+<p class="property-location">
+Hafeezpet, Hyderabad
+</p>
+
+<div class="price">
+Contact for price
+</div>
+
+
+<div class="property-features">
+
+<span>✓ Wi-Fi</span>
+
+<span>✓ Housekeeping</span>
+
+<span>✓ Food</span>
+
+</div>
+
+
+<a
+href="#rental"
+class="property-contact"
+>
+Enquire Now →
+</a>
+
+</div>
+
+</article>
+
+
+<!-- PROPERTY 2 -->
+
+<article class="property-card">
+
+<div class="property-image property-two">
+
+<span class="property-badge">
+Popular
+</span>
+
+</div>
+
+
+<div class="property-content">
+
+<div class="property-type">
+Rental Apartment
+</div>
+
+<h3>
+Modern Apartment
+</h3>
+
+<p class="property-location">
+Kondapur, Hyderabad
+</p>
+
+<div class="price">
+Contact for price
+</div>
+
+
+<div class="property-features">
+
+<span>✓ Parking</span>
+
+<span>✓ Security</span>
+
+<span>✓ Lift</span>
+
+</div>
+
+
+<a
+href="#rental"
+class="property-contact"
+>
+Enquire Now →
+</a>
+
+</div>
+
+</article>
+
+
+<!-- PROPERTY 3 -->
+
+<article class="property-card">
+
+<div class="property-image property-three">
+
+<span class="property-badge">
+New
+</span>
+
+</div>
+
+
+<div class="property-content">
+
+<div class="property-type">
+Family Rental
+</div>
+
+<h3>
+Ready-to-Move Home
+</h3>
+
+<p class="property-location">
+Gachibowli, Hyderabad
+</p>
+
+<div class="price">
+Contact for price
+</div>
+
+
+<div class="property-features">
+
+<span>✓ Furnished</span>
+
+<span>✓ Parking</span>
+
+<span>✓ Security</span>
+
+</div>
+
+
+<a
+href="#rental"
+class="property-contact"
+>
+Enquire Now →
+</a>
+
+</div>
+
+</article>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     PROPERTY VIDEO
+========================= -->
+
+<section class="section video-section" id="video">
+
+<div class="container video-grid">
+
+
+<div class="video-text">
+
+<div class="section-label">
+PROPERTY VIDEO
+</div>
+
+<h2>
+See the property before you visit.
+</h2>
+
+<p>
+Watch the property video and contact Easy Living Place
+for availability, rent details and property visits.
+</p>
+
+
+<a
+href="https://wa.me/917386190087?text=Hello%20Easy%20Living%20Place%2C%20I%20saw%20your%20property%20video%20and%20would%20like%20more%20details."
+target="_blank"
+class="btn btn-primary"
+>
+Chat on WhatsApp
+</a>
+
+</div>
+
+
+<div class="video-container">
+
+<video
+controls
+playsinline
+preload="metadata"
+>
+
+<source
+src="featured-property-video.mp4"
+type="video/mp4"
+>
+
+Your browser does not support the video.
+
+</video>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     AMENITIES
+========================= -->
+
+<section
+class="section section-light"
+id="amenities"
+>
+
+<div class="container">
+
+
+<div class="center-heading">
+
+<div class="section-label">
+WHY EASY LIVING PLACE
+</div>
+
+<h2>
+Everything you need for easy living
+</h2>
+
+<p>
+Practical facilities and convenient locations for a comfortable stay.
+</p>
+
+</div>
+
+
+<div class="amenity-grid">
+
+
+<div class="amenity">
+
+<div class="amenity-icon">
+📶
+</div>
+
+<h3>
+High-Speed Wi-Fi
+</h3>
+
+<p>
+Stay connected for work, study and entertainment.
+</p>
+
+</div>
+
+
+<div class="amenity">
+
+<div class="amenity-icon">
+🍽️
+</div>
+
+<h3>
+Food Options
+</h3>
+
+<p>
+Convenient food support for a comfortable stay.
+</p>
+
+</div>
+
+
+<div class="amenity">
+
+<div class="amenity-icon">
+🧹
+</div>
+
+<h3>
+Housekeeping
+</h3>
+
+<p>
+Keep your living space clean and comfortable.
+</p>
+
+</div>
+
+
+<div class="amenity">
+
+<div class="amenity-icon">
+🚇
+</div>
+
+<h3>
+Great Connectivity
+</h3>
+
+<p>
+Easy access to offices, metro routes and major areas.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section class="section" id="about">
+
+<div class="container about-grid">
+
+
+<div class="about-image">
+
+<img
+src="easy living.jpeg"
+alt="Easy Living Place"
+class="about-logo"
+>
+
+</div>
+
+
+<div class="about-text">
+
+<div class="section-label">
+ABOUT US
+</div>
+
+<h2>
+Making rental living simpler in Hyderabad.
+</h2>
+
+<p>
+Easy Living Place is a Hyderabad-based real estate and
+rental service focused on helping people find comfortable
+living spaces.
+</p>
+
+<p>
+Our goal is to make the process of finding a suitable home
+simple, convenient and easy.
+</p>
+
+
+<div class="check-list">
+
+<div>
+✓ Comfortable living options
+</div>
+
+<div>
+✓ Convenient Hyderabad locations
+</div>
+
+<div>
+✓ Easy WhatsApp enquiry
+</div>
+
+<div>
+✓ Property visit support
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     RENTAL REQUIREMENT
+========================= -->
+
+<section
+class="section form-section"
+id="rental"
+>
+
+<div class="container form-grid">
+
+
+<div class="form-info">
+
+<div class="section-label">
+RENTAL REQUIREMENT
+</div>
+
+<h2>
+Tell us what kind of home you need.
+</h2>
+
+<p>
+Share your requirements and Easy Living Place can contact you
+with suitable rental options.
+</p>
+
+
+<div class="contact-details">
+
+<div>
+
+<strong>
+📍 Address
+</strong>
+
+<p>
+3, Srila Park Pride Rd, Shilpa Avenue Colony,
+Hafeezpet, Hyderabad, Telangana 500085
+</p>
+
+</div>
+
+
+<div>
+
+<strong>
+🕙 Business Hours
+</strong>
+
+<p>
+Every day: 10:00 AM – 6:00 PM
+</p>
+
+</div>
+
+
+<div>
+
+<strong>
+📱 WhatsApp
+</strong>
+
+<p>
+7386190087
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- RENTAL FORM -->
+
+<form
+class="rental-form"
+id="rentalForm"
+>
+
+<h3>
+🏠 Rental Requirement Details
+</h3>
+
+<p class="form-intro">
+Please share the details below.
+</p>
+
+
+<div class="form-group">
+
+<label>
+👤 Your Good Name *
+</label>
+
+<input
+type="text"
+id="name"
+placeholder="Enter your name"
+required
+>
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+📞 Phone / WhatsApp Number *
+</label>
+
+<input
+type="tel"
+id="phone"
+placeholder="Enter phone number"
+required
+>
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+📍 Preferred Location / Area *
+</label>
+
+<input
+type="text"
+id="location"
+placeholder="Example: Hafeezpet, Kondapur"
+required
+>
+
+</div>
+
+
+<div class="form-row">
+
+
+<div class="form-group">
+
+<label>
+💰 Budget Range *
+</label>
+
+<select id="budget" required>
+
+<option value="">
+Select budget
+</option>
+
+<option>
+Below ₹15,000
+</option>
+
+<option>
+₹15,000 – ₹25,000
+</option>
+
+<option>
+₹25,000 – ₹35,000
+</option>
+
+<option>
+₹35,000 – ₹50,000
+</option>
+
+<option>
+Above ₹50,000
+</option>
+
+</select>
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+🏢 Required BHK *
+</label>
+
+<select id="bhk" required>
+
+<option value="">
+Select BHK
+</option>
+
+<option>
+2 BHK
+</option>
+
+<option>
+3 BHK
+</option>
+
+</select>
+
+</div>
+
+</div>
+
+
+<div class="form-row">
+
+
+<div class="form-group">
+
+<label>
+👨‍👩‍👧 Family or Bachelor *
+</label>
+
+<select id="occupancy" required>
+
+<option value="">
+Select
+</option>
+
+<option>
+Family
+</option>
+
+<option>
+Bachelor
+</option>
+
+<option>
+Working Professionals
+</option>
+
+</select>
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+🛋️ Furnishing *
+</label>
+
+<select id="furnishing" required>
+
+<option value="">
+Select
+</option>
+
+<option>
+Furnished
+</option>
+
+<option>
+Semi-Furnished
+</option>
+
+<option>
+Unfurnished
+</option>
+
+</select>
+
+</div>
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+📅 Move-in Date *
+</label>
+
+<input
+type="date"
+id="movein"
+required
+>
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+🏢 Working Company Name
+</label>
+
+<input
+type="text"
+id="company"
+placeholder="Company name"
+>
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+💼 Job Role / Profession
+</label>
+
+<input
+type="text"
+id="profession"
+placeholder="Example: Software Engineer"
+>
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+🛐 Religion
+</label>
+
+<input
+type="text"
+id="religion"
+placeholder="Optional"
+>
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+🚗 Preferred Amenities
+</label>
+
+<input
+type="text"
+id="amenities"
+placeholder="Parking, Lift, Security, etc."
+>
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+📝 Other Requirements
+</label>
+
+<textarea
+id="message"
+rows="4"
+placeholder="Any other requirements"
+></textarea>
+
+</div>
+
+
+<button
+type="submit"
+class="btn btn-primary full"
+>
+Send Requirement on WhatsApp
+</button>
+
+
+<small class="form-note">
+Your enquiry will open in WhatsApp with the details filled automatically.
+</small>
+
+</form>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     INSTAGRAM
+========================= -->
+
+<section class="section instagram-section">
+
+<div class="container">
+
+<div class="instagram-box">
+
+<div>
+
+<div class="section-label">
+FOLLOW US
+</div>
+
+<h2>
+See our latest rental properties.
+</h2>
+
+<p>
+Check the rental_property_hyderabad Instagram account
+for property photos, videos and latest updates.
+</p>
+
+</div>
+
+
+<a
+href="https://www.instagram.com/rental_property_hyderabad/"
+target="_blank"
+class="btn btn-white"
+>
+Go to Instagram
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+<div class="container footer-grid">
+
+<div>
+
+<div class="footer-brand">
+Easy Living Place
+</div>
+
+<p class="footer-text">
+Comfortable spaces. Easier living.
+</p>
+
+</div>
+
+
+<div class="footer-right">
+
+<p>
+📞 WhatsApp: 7386190087
+</p>
+
+<p>
+© 2026 Easy Living Place
+</p>
+
+</div>
+
+</div>
+
+</footer>
+
+
+<!-- =========================
+     FLOATING WHATSAPP
+========================= -->
+
+<a
+href="https://wa.me/917386190087?text=Hello%20Easy%20Living%20Place%2C%20I%20am%20interested%20in%20a%20rental%20property."
+target="_blank"
+class="whatsapp-float"
+>
+
+<span class="whatsapp-icon">
+☏
+</span>
+
+<span>
+Chat on WhatsApp
+</span>
+
+</a>
+
+
+<script>
+
+/* =========================
+   MOBILE MENU
+========================= */
+
+function toggleMenu(){
+
+    const nav =
+    document.getElementById("navLinks");
+
+    nav.classList.toggle("active");
+
+}
+
+
+/* =========================
+   SEARCH
+========================= */
+
+function searchProperty(){
+
+    const location =
+    document.getElementById("searchLocation").value;
+
+    const bhk =
+    document.getElementById("searchBhk").value;
+
+    if(!location && !bhk){
+
+        alert(
+            "Please select a location or BHK."
+        );
+
+        return;
+
+    }
+
+    document
+    .getElementById("rental")
+    .scrollIntoView({
+        behavior:"smooth"
+    });
+
+}
+
+
+/* =========================
+   RENTAL FORM → WHATSAPP
+========================= */
+
+document
+.getElementById("rentalForm")
+.addEventListener("submit",function(event){
+
+    event.preventDefault();
+
+
+    const name =
+    document.getElementById("name").value;
+
+    const phone =
+    document.getElementById("phone").value;
+
+    const location =
+    document.getElementById("location").value;
+
+    const budget =
+    document.getElementById("budget").value;
+
+    const bhk =
+    document.getElementById("bhk").value;
+
+    const occupancy =
+    document.getElementById("occupancy").value;
+
+    const furnishing =
+    document.getElementById("furnishing").value;
+
+    const movein =
+    document.getElementById("movein").value;
+
+    const company =
+    document.getElementById("company").value || "Not specified";
+
+    const profession =
+    document.getElementById("profession").value || "Not specified";
+
+    const religion =
+    document.getElementById("religion").value || "Not specified";
+
+    const amenities =
+    document.getElementById("amenities").value || "Not specified";
+
+    const message =
+    document.getElementById("message").value || "Not specified";
+
+
+    const whatsappMessage =
+
+`🏠 *Rental Requirement – Easy Living Place*
+
+👤 Name: ${name}
+
+📞 Phone: ${phone}
+
+📍 Preferred Location: ${location}
+
+💰 Budget: ${budget}
+
+🏢 Required BHK: ${bhk}
+
+👨‍👩‍👧 Family/Bachelor: ${occupancy}
+
+🛋️ Furnishing: ${furnishing}
+
+📅 Move-in Date: ${movein}
+
+🏢 Company: ${company}
+
+💼 Job Role/Profession: ${profession}
+
+🛐 Religion: ${religion}
+
+🚗 Preferred Amenities: ${amenities}
+
+📝 Other Requirements: ${message}`;
+
+
+    const whatsappURL =
+
+    "https://wa.me/917386190087?text="
+    +
+    encodeURIComponent(whatsappMessage);
+
+
+    window.open(
+        whatsappURL,
+        "_blank"
+    );
+
+});
+
+</script>
+
+</body>
+</html>
